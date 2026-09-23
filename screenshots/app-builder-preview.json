@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Northline",
+      "hasCanvas": false,
+      "bodyTextLen": 3843,
+      "bodyTextHash": "1825ae045cfa1891e3f8a5130363ab69d944daba5a73353143ca205173a8934b",
+      "bodyTextPrefix": "Skip to content Northline Northline home Product Features Pricin",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Northline",
+      "hasCanvas": false,
+      "bodyTextLen": 3740,
+      "bodyTextHash": "d272d7cbb9760862191e074a4630cbc5aca13d280b3593e747734aafcbf103f1",
+      "bodyTextPrefix": "Skip to content Northline Northline home EARLY ACCESS · PRODUCT-",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
