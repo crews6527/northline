@@ -8,8 +8,7 @@ export function Footer() {
         <div className="max-w-xs">
           <Logo />
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            The billing layer for product-led teams. Meter, invoice, collect —
-            one ledger.
+            A SaaS billing and collections concept from Prompt Copy Studio.
           </p>
         </div>
         <div className="flex flex-wrap gap-12">
@@ -37,7 +36,7 @@ export function Footer() {
             <ul className="mt-3 flex flex-col gap-2">
               <li>
                 <a href="#signup" className="text-sm text-foreground hover:text-primary">
-                  Request access
+                  Ask about availability
                 </a>
               </li>
               <li>
@@ -50,8 +49,9 @@ export function Footer() {
         </div>
       </div>
       <p className="mx-auto mt-10 max-w-6xl px-4 text-xs text-muted-foreground sm:px-6">
-        © 2026 Northline, Inc. All rights reserved.
+        © 2026 Prompt Copy Studio. Northline is under development. <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a>
       </p>
     </footer>
   );
 }
+

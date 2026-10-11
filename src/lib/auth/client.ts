@@ -32,7 +32,7 @@ export const authClient = createAuthClient({
  * True when sign-in UI should be shown — i.e. whenever `VITE_AUTH_ENABLED` is
  * not `"false"`. The shipped template sets it to `"false"`
  * (`.grok/app-env.json`), which selects the dev user (see `use-current-user`);
- * with the key removed, sign-in is real in preview (baked preview client) and
+ * with the flag enabled and server credentials configured, sign-in is real in preview and
  * when deployed (injected per-app client).
  */
 export const authEnabled = import.meta.env.VITE_AUTH_ENABLED !== "false";
@@ -49,7 +49,7 @@ const BEARER_KEY = "grok-auth.bearer-token";
 
 /** The stored preview bearer token, or null. */
 export function getBearerToken(): string | null {
-  if (typeof window === "undefined") return null;
+  if (typeof window === "undefined" || !inLivePreview()) return null;
   try {
     return window.sessionStorage.getItem(BEARER_KEY);
   } catch {
@@ -58,7 +58,7 @@ export function getBearerToken(): string | null {
 }
 
 function setBearerToken(token: string | null): void {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || !inLivePreview()) return;
   try {
     if (token) window.sessionStorage.setItem(BEARER_KEY, token);
     else window.sessionStorage.removeItem(BEARER_KEY);
@@ -234,3 +234,4 @@ export async function signOut(redirectTo = "/"): Promise<void> {
     },
   });
 }
+

@@ -18,6 +18,7 @@ function StatusBadge({ status }: { status: (typeof invoices)[number]["status"] }
     Draft: "bg-secondary text-muted-foreground",
   };
   return (
+
     <span
       className={cn(
         "inline-flex rounded-full px-2 py-0.5 text-xs font-medium",
@@ -31,6 +32,8 @@ function StatusBadge({ status }: { status: (typeof invoices)[number]["status"] }
 
 export function ProductPreview() {
   return (
+    <section aria-label="Illustrative interface with sample figures, no live financial records">
+    <p className="mb-3 text-center text-sm text-muted-foreground">Illustrative interface with sample figures. No live financial records.</p>
     <div className="rounded-xl bg-card p-1 shadow-preview">
       <div className="overflow-hidden rounded-lg bg-background">
         <div className="flex items-center gap-2 border-b border-border px-3 py-2">
@@ -38,7 +41,7 @@ export function ProductPreview() {
           <span className="size-2 rounded-full bg-secondary" />
           <span className="size-2 rounded-full bg-secondary" />
           <div className="mx-auto flex h-7 w-full max-w-xs items-center justify-center rounded-md bg-secondary text-xs text-muted-foreground">
-            app.northline.dev
+            Northline concept preview
           </div>
         </div>
 
@@ -73,7 +76,7 @@ export function ProductPreview() {
                 </p>
                 <p className="text-base font-medium">Revenue overview</p>
               </div>
-              <Badge variant="muted">Live</Badge>
+              <Badge variant="muted">Sample</Badge>
             </div>
 
             <div className="mb-4 grid grid-cols-2 gap-2 lg:grid-cols-4">
@@ -116,6 +119,7 @@ export function ProductPreview() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 
@@ -176,3 +180,4 @@ function MrrChart() {
     </svg>
   );
 }
+

@@ -30,12 +30,12 @@ export function Features() {
               Platform
             </p>
             <h2 className="headline-section mt-4 text-foreground">
-              Everything between usage and cash.
+              Planned billing features.
             </h2>
           </div>
           <Button asChild variant="outline">
             <a href="#signup">
-              Get started
+              Ask about availability
               <ArrowRight />
             </a>
           </Button>
@@ -65,3 +65,4 @@ export function Features() {
     </section>
   );
 }
+

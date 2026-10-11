@@ -10,25 +10,20 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: APP_NAME },
+      { title: APP_NAME + " | SaaS billing concept" },
       {
         name: "description",
         content:
-          "Northline is the billing and collections engine for product-led SaaS. Meter usage, invoice automatically, and see MRR that matches the money in the bank.",
+          "Explore the Northline SaaS billing and collections concept. Product development is ongoing; paid plans, accounts, and trials are not available.",
       },
       { name: "theme-color", content: "#0b0c0e" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
         crossOrigin: "anonymous",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap",
       },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },
@@ -50,3 +45,4 @@ export const Route = createRootRoute({
     </html>
   ),
 });
+

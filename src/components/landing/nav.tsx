@@ -93,7 +93,7 @@ export function Nav() {
 
         <div className="hidden md:block">
           <Button asChild>
-            <a href="#signup">Start free trial</a>
+            <a href="#signup">Ask about availability</a>
           </Button>
         </div>
 
@@ -134,7 +134,7 @@ export function Nav() {
                     go("#signup");
                   }}
                 >
-                  Start free trial
+                  Ask about availability
                 </a>
               </Button>
             </nav>
@@ -144,3 +144,4 @@ export function Nav() {
     </header>
   );
 }
+

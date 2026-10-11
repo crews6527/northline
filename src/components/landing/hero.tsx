@@ -12,19 +12,18 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="stagger-in mx-auto max-w-3xl text-center">
           <p className="label-kicker text-xs font-medium text-primary uppercase">
-            Early access · Product-led billing
+            Product concept · SaaS billing
           </p>
           <h1 className="headline-display mt-5 text-foreground">
-            Your revenue is <em className="italic">not</em> a spreadsheet.
+            SaaS billing and collections, in development.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Northline meters usage, invoices customers, and recovers failed
-            payments — so the number you report matches the money in the bank.
+            Northline is a planned workspace for usage-based billing, invoices, and payment follow-up. Explore the concept and ask about development.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg">
               <a href="#signup">
-                Start free trial
+                Ask about availability
                 <ArrowRight />
               </a>
             </Button>
@@ -33,7 +32,7 @@ export function Hero() {
             </Button>
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
-            14-day trial on every plan. No card required.
+            Preview only. No paid service or trial is available.
           </p>
         </div>
         <div className="mt-12 sm:mt-16">
@@ -43,3 +42,4 @@ export function Hero() {
     </section>
   );
 }
+
