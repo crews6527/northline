@@ -9,12 +9,11 @@ export function Value() {
             Why Northline
           </p>
           <h2 className="headline-section mt-4 text-foreground">
-            Three systems. One source of truth.
+            The workflow we’re building.
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
             Metering lives in your product. Invoices live in a billing tool.
-            Collections live in someone’s inbox. Northline closes the loop so
-            finance, product, and support see the same customer.
+            Collections live in someone’s inbox. The planned Northline workflow brings these tasks into one workspace. These integrations are not operating in this preview.
           </p>
         </div>
         <div className="mt-12 grid gap-4 md:grid-cols-3">
@@ -39,3 +38,4 @@ export function Value() {
     </section>
   );
 }
+

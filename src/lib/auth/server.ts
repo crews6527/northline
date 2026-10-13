@@ -178,6 +178,15 @@ export const auth = betterAuth({
   // globalThis so HMR doesn't invalidate PGLite-backed sessions (see above).
   secret: env("BETTER_AUTH_SECRET") ?? previewAuthSecret(),
   database,
+  // Shared storage across server instances; deploy the rateLimit migration first.
+  rateLimit: {
+    enabled: true, storage: "database", window: 60, max: 60,
+    customRules: {
+      "/sign-in/*": { window: 60, max: 5 },
+      "/sign-up/*": { window: 60, max: 5 },
+      "/request-password-reset": { window: 60, max: 3 },
+    },
+  },
 
   // CSRF / origin check for credentialed auth POSTs (email sign-up/sign-in, …).
   // See `trustedOrigins` construction above — must cover live preview hosts AND
@@ -259,3 +268,4 @@ export function readSessionToken(): string | null {
 // Re-exported for convenience; the array lives in the dependency-free
 // `providers.ts` so the client can import it too.
 export { GROK_PROVIDERS } from "./providers";
+
