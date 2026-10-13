@@ -5,6 +5,7 @@
  * then build sign-up / sign-in forms with `authClient.signUp.email` /
  * `authClient.signIn.email` from `@/lib/auth/client` (see the auth skill).
  *
- * Do NOT edit `server.ts` for this — that file is frozen pre-wired config.
+ * Authentication configuration may be changed for production requirements.
+ * Preserve the broker/session trust checks and verify affected login flows.
  */
 export const emailAndPasswordEnabled = false;
